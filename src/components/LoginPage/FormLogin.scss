@@ -1,0 +1,17 @@
+.container-login {
+    margin-top: 180px;
+    margin-bottom: 150px;
+    h2 {
+        text-align: center;
+    }
+    input {
+        border-radius: 20px;
+    }
+    .btn-round-login {
+        background: #2072ea;
+        border-color: #2072ea;
+        border-radius: 20px;
+        box-shadow: 0 2px 8px 0 rgba(32,114,234,0.6);
+        font-size: 1.1rem;
+    }
+}

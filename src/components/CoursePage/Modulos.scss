@@ -1,0 +1,29 @@
+.modulos-container {
+    .learn {
+        h4 {
+            color: #484f52;
+            font-weight: 300;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .alerts {
+            margin-bottom: 50px;
+            .alert {
+                margin-bottom: 7px;
+            }
+            .alert-success {
+                color: #555e61;
+                background: #f8fdf9;
+                border-color: #ddf8e4;
+            }
+        }
+        .item-conteudo {
+            margin-bottom: 3px;
+        }
+    }
+    .card {
+        .card-header {
+            cursor: pointer;
+        }
+    }
+}

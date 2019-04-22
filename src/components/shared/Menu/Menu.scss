@@ -1,0 +1,122 @@
+.navbar-bg {
+    background-color: rgba(12, 29, 41, 0.9) !important;
+    color: #fff;
+    .navbar-nav {
+        .nav-link {
+            padding-right: .9rem;
+            padding-left: .9rem;
+        }
+        a:hover {
+            color: #ffffff !important;
+        }
+    }
+    .nav-logo {
+        width: 130px;
+        cursor: pointer;
+    }
+    .nav-link {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+    .navbar-toggler {
+        border-color: #ffffff;
+        &:focus {
+            outline: none;
+        }
+    }
+    .assine {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .nav-link {
+            margin-left: .9rem !important;
+        }
+    }
+    .active {
+        border-bottom: 2px #ffffff solid;
+    }
+    .search {
+        padding-right: .9rem;
+        padding-left: .9rem;
+        button {
+            background: transparent;
+            display: flex;
+            width: 50px;
+            &:focus {
+                box-shadow: none;
+            }
+            &:active {
+                box-shadow: none !important;
+                border-color: #6c757d !important;
+                background: transparent !important;
+            }
+            i {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+        input {
+            width: 350px;
+            background: transparent;
+            border: 1px solid #6c757d;
+            color: rgba(255, 255, 255, 0.7);
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    .notification {
+        width: 280px;
+        button {
+            white-space: initial !important;
+        }
+    }
+    .dropdown .nav-link {
+        padding: 0 !important;
+        margin-left: 17px !important;
+        margin-top: 7px !important;
+        &.profile {
+            margin-top: 3px !important;
+            margin-left: 10px !important;
+        }
+    }
+    .profile {
+        img {
+            width: 32px;
+            border-radius: 100%;
+        }
+        span {
+            margin-left: 10px;
+        }
+    }
+    .sair {
+        cursor: pointer !important;
+    }
+    .hidden {
+        display: none;
+    }
+}
+.btn-round {
+    background: #e62d2d;
+    border-color: #e62d2d;
+    border-radius: 20px;
+    padding: 3px 15px 3px 15px !important;
+    box-shadow: 0 2px 8px 0 rgba(255,0,0,0.6);
+}
+
+@media screen and (max-width: 1199px) {
+    .navbar-bg {
+        .searchItem, .assine {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .navbar-bg {
+        .active {
+            border: none;
+        }
+        .navbar-collapse {
+            margin-top: 9px;
+        }
+    }
+}

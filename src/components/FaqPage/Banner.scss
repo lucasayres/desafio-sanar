@@ -1,0 +1,59 @@
+.banner-question {
+    background: url("/static/images/banner-home.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+    height: 350px;
+    width: 100%;
+    display: table;
+    position: relative;
+    z-index: 1;
+    .banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .7);
+        z-index: -1;
+        height: 350px;
+    }
+    .container-fluid {
+        vertical-align: middle;
+        display: table-cell;
+        .display-5 {
+            font-size: 2.6em;
+            font-weight: 500;
+        }
+        p {
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: #ede3d3 !important;
+        }
+    }
+}
+.btn-round-red {
+    background: #e62d2d;
+    border-color: #e62d2d;
+    border-radius: 20px;
+    padding: 3px 80px 3px 80px !important;
+    box-shadow: 0 2px 8px 0 rgba(255,0,0,0.6);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .banner-question {
+        .container-fluid {
+            .display-5 {
+                font-size: 2.0em;
+            }
+            .pb-5 {
+                font-size: 0.9rem;
+                padding-bottom: 1rem !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+version: '3.4'
+services:
+  nginx:
+    image: jwilder/nginx-proxy:alpine
+    ports:
+      - 80:80
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+  app:
+    image: registry.gitlab.com/lucasayres-projects/personal/sanarflix:latest
+    depends_on:
+      - nginx
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - VIRTUAL_PROTO=http
+      - VIRTUAL_PORT=80
+      - VIRTUAL_HOST=localhost
+      - HOST=0.0.0.0
+      - PORT=80
+      - DOMAIN=localhost
